@@ -1,0 +1,35 @@
+
+const personData = {
+        data:
+    [{"id":1,"first_name":"Ankit", "email_id":"ankit@gamil.com","gender":"Male","blood_group":"A"},
+    {"id": 3,"first_name":"Puja", "email_id":"puja@gamil.com","gender":"Female", "blood_group":"A"},
+    {"id": 4,"first_name":"Ankit", "email_id":"ankit@gamil.com","gender":"Male", "blood_group":"B"},
+    {"id": 5,"first_name":"Ankit", "email_id":"ankit@gamil.com","gender":"Male", "blood_group":"A"},
+    {"id": 6,"first_name":"Puja", "email_id":"puja@gamil.com","gender":"Female", "blood_group":"C"},
+    {"id": 7,"first_name":"Ankit", "email_id":"ankit@gamil.com","gender":"Male", "blood_group":"A"},
+    {"id": 8,"first_name":"Puja", "email_id":"puja@gamil.com","gender":"Female", "blood_group":"D"},
+    {"id": 9,"first_name":"Ankit", "email_id":"ankit@gamil.com","gender":"Male" ,"blood_group":"A"},
+    {"id": 10,"first_name":"Puja", "email_id":"puja@gamil.com","gender":"Female", "blood_group":"B"},
+    {"id": 11,"first_name":"Ankit", "email_id":"ankit@gamil.com","gender":"Male", "blood_group":"A"},
+    {"id": 12,"first_name":"Puja", "email_id":"puja@gamil.com","gender":"Female", "blood_group":"C"},
+    {"id": 13,"first_name":"Ankit", "email_id":"ankit@gamil.com","gender":"Male", "blood_group":"A"},
+    {"id": 14,"first_name":"Puja", "email_id":"puja@gamil.com","gender":"Female", "blood_group":"D"},
+    {"id": 15,"first_name":"Ankit", "email_id":"ankit@gamil.com","gender":"Male", "blood_group":"A"},
+    {"id": 16,"first_name":"Puja", "email_id":"puja@gamil.com","gender":"Female", "blood_group":"B"},
+    {"id": 17,"first_name":"Puja", "email_id":"puja@gamil.com","gender":"Female", "blood_group":"C"},
+    {"id": 18,"first_name":"Ankit", "email_id":"ankit@gamil.com","gender":"Male", "blood_group":"D"},
+    {"id": 19,"first_name":"Puja", "email_id":"puja@gamil.com","gender":"Female", "blood_group":"A"},
+    {"id": 31,"first_name":"Ankit", "email_id":"ankit@gamil.com","gender":"Male", "blood_group":"B"},
+    {"id": 20,"first_name":"Puja", "email_id":"puja@gamil.com","gender":"Female", "blood_group":"C"},
+    {"id": 21,"first_name":"Ankit", "email_id":"ankit@gamil.com","gender":"Male", "blood_group":"D"},
+    {"id": 22,"first_name":"Ankit", "email_id":"ankit@gamil.com","gender":"Male", "blood_group":"A"},
+    {"id": 23,"first_name":"Puja", "email_id":"puja@gamil.com","gender":"Female", "blood_group":"B"},
+    {"id": 24,"first_name":"Ankit", "email_id":"ankit@gamil.com","gender":"Male", "blood_group":"C"},
+    {"id": 25,"first_name":"Ankit", "email_id":"ankit@gamil.com","gender":"Male", "blood_group":"D"},
+    {"id": 26,"first_name":"Puja", "email_id":"puja@gamil.com","gender":"Female", "blood_group":"A"},
+    {"id": 27,"first_name":"Ankit", "email_id":"ankit@gamil.com","gender":"Male", "blood_group":"B"},
+    {"id": 28,"first_name":"Ankit", "email_id":"ankit@gamil.com","gender":"Male", "blood_group":"C"},
+    {"id": 29,"first_name":"Puja", "email_id":"puja@gamil.com","gender":"Female", "blood_group":"D"},
+    {"id": 30,"first_name":"Ankit", "email_id":"ankit@gamil.com","gender":"Male", "blood_group":"A"}]
+}
+export default personData;
