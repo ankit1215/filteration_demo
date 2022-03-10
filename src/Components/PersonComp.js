@@ -1,18 +1,41 @@
-
-import Data from "../Static_files/data";
+import Data from '../Static_files/data';
 
 import React, { useState, useEffect } from 'react';
 
 const PersonComp = () => {
     const [persondata, setPersonData] = useState(Data.data);
     const [filterData, setFilterData] = useState(Data.data);
-    const [filters, setFilters] = useState([]);
-    console.log({persondata, filterData, filters})
+    // const [filters, setFilters] = useState([]);
+    const [filters, setFilters] = useState({
+        gender: [],
+        blood_group: [],
+    });
+    // console.log({ persondata, filterData, filters });
+    console.log('Filters array => ', filters);
+
     const filterUserData = () => {
-        if (filters.length === 0) return
-        if (filters.includes("All")) return setFilterData((prevState) => persondata);
-        setFilterData((prevState) => persondata.filter((user) => filters.includes(user.gender)));
-        setFilterData((prevState) => persondata.filter((user) => filters.includes(user.blood_group)));
+        // if () return;
+        if (filters.includes('All') || filters.length === 0)
+            return setFilterData((prevState) => persondata);
+
+        setFilterData((prevState) =>
+            persondata.filter((user) => {
+                if (
+                    filters.gender.includes(user.gender) ||
+                    filters.blood_group.includes(user.blood_group)
+                )
+                    return user;
+            })
+        );
+        // setFilterData((prevState) =>
+        //     persondata.filter(
+        //         (user) => filters.includes(user.gender) && filters.includes(user.blood_group)
+        //     )
+        // );
+
+        // setFilterData((prevState) =>
+        //     persondata.filter((user) => filters.includes(user.blood_group))
+        // );
         // this.setState({
         //     ...this.state,
         //     filterData: this.state.persondata.filter((user) =>
@@ -119,7 +142,6 @@ const PersonComp = () => {
                     <label className='form-check-label' htmlFor='defaultCheck6'>
                         C
                     </label>
-
                 </div>
                 <div className='form-check'>
                     <input
@@ -133,9 +155,6 @@ const PersonComp = () => {
                         D
                     </label>
                 </div>
-
-
-
             </div>
             <div>
                 <h2>Total: {filterData.length}</h2>
@@ -166,4 +185,3 @@ const PersonComp = () => {
 };
 
 export default PersonComp;
-
